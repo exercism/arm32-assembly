@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "9a367bc8-d115-4cbf-b2d2-12908cef30e3",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing ARM32 Assembly locally",
+      "blurb": "Learn how to install ARM32 Assembly locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "7cbbfa31-d73c-4ac8-b245-30a7f7449c9d",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn ARM32 Assembly",
+      "blurb": "An overview of how to get started from scratch with ARM32 Assembly"
+    },
+    {
+      "uuid": "8f23f366-46fe-4f30-9e83-f0db795ef345",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the ARM32 Assembly track",
+      "blurb": "Learn how to test your ARM32 Assembly exercises on Exercism"
+    },
+    {
+      "uuid": "70b767ef-dbba-4dda-a3d7-e000392f9cdc",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful ARM32 Assembly resources",
+      "blurb": "A collection of useful resources to help you master ARM32 Assembly"
+    }
+  ]
+}
