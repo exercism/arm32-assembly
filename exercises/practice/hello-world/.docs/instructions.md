@@ -11,6 +11,6 @@ The objectives are simple:
 - Run the test suite and make sure that it succeeds.
 - Submit your solution and check it at the website.
 
-If everything goes  well, you will be ready to fetch your first real exercise.
+If everything goes well, you will be ready to fetch your first real exercise.
 
-[hello-world]: http://en.wikipedia.org/wiki/%22Hello,_world!%22_program
+[hello-world]: https://en.wikipedia.org/wiki/%22Hello,_world!%22_program
