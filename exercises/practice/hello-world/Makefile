@@ -2,9 +2,9 @@ AS = arm-linux-gnueabihf-as
 CC = arm-linux-gnueabihf-gcc
 
 CFLAGS = -g -Wall -Wextra -pedantic -Werror
-LDFLAGS=
+LDFLAGS= -z noexecstack
 
-ALL_LDFLAGS = -pie
+ALL_LDFLAGS = -pie -Wl,--fatal-warnings
 
 ALL_CFLAGS = -std=c99 -fPIE $(CFLAGS)
 ALL_LDFLAGS += $(LDFLAGS)
