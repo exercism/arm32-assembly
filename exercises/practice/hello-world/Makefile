@@ -4,7 +4,7 @@ CC = arm-linux-gnueabihf-gcc
 CFLAGS = -g -Wall -Wextra -pedantic -Werror
 LDFLAGS=
 
-ALL_LDFLAGS = -pie -Wl,--fatal-warnings
+ALL_LDFLAGS = -pie
 
 ALL_CFLAGS = -std=c99 -fPIE $(CFLAGS)
 ALL_LDFLAGS += $(LDFLAGS)
