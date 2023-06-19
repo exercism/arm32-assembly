@@ -37,7 +37,7 @@ jobs:
       - name: Install project dependencies
         run: |
           sudo apt update -q
-          sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf
+          sudo apt install -y qemu-user gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf
 
       - name: Run exercism/arm32-assembly test (runs tests) for all exercises
         env:
