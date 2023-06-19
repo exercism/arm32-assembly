@@ -1,7 +1,7 @@
 // Include the test framework.
 #include "test-framework/unity.h"
 
-// Include the
+// Include the external function.
 extern const char *hello(void);
 
 // Runs before every test.

@@ -13,27 +13,34 @@
 # Requires scripts:
 # - bin/test
 
-name: <track> / Test
+name: arm32-assembly / Test
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
   workflow_dispatch:
 
 jobs:
   ci:
-    runs-on: <image-name>
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [gcc, clang]
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Use <setup tooling>
-        uses: <action to setup tooling>
-
       - name: Install project dependencies
-        run: <install dependencies>
+        run: |
+          sudo apt update -q
+          sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf
 
-      - name: Verify all exercises
+      - name: Run exercism/arm32-assembly test (runs tests) for all exercises
+        env:
+          CC: ${{ matrix.compiler }}
+          CC_FOR_BUILD: ${{ matrix.compiler }}
         run: bin/verify-exercises
